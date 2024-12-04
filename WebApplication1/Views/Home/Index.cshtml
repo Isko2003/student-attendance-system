@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border: none !important;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .btn-custom {
+            background: #ffffff;
+            color: #2575fc;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+        .btn-custom:hover {
+            background: #2575fc;
+            color: #ffffff;
+        }
+
+        footer {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Welcome to the Student Attendance Management System</h1>
+        <p class="mb-4">Easily manage and track student attendance with our simple and intuitive interface.</p>
+        <a href="/Students" class="btn btn-custom">View Students</a>
+    </div>
+</body>
+</html>
